@@ -3,14 +3,13 @@
 #include "curses.h"
 #include "model.h"
 #include "view.h"
-#include "invoker.cpp"
+#include "concrete_cmd.cpp"
 
 class Controller {
 
 private:
 	bool exit_program_;
 	Model* model_;
-	Switch* switcher_;
 
 	void navigation_commands();
 	void write_mode();

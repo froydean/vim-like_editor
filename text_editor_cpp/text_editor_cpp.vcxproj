@@ -134,7 +134,6 @@
     <ClCompile Include="command.cpp" />
     <ClCompile Include="concrete_cmd.cpp" />
     <ClCompile Include="controller.cpp" />
-    <ClCompile Include="invoker.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="model.cpp" />
     <ClCompile Include="pdcurses_adapter.cpp" />

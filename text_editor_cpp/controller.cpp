@@ -3,12 +3,10 @@
 Controller::Controller() {
 	exit_program_ = false;
 	model_ = new Model();
-	switcher_ = new Switch();
 }
 
 Controller::~Controller() {
 		delete model_;
-		delete switcher_;
 }
 
 void Controller::navigation_commands() {
@@ -212,12 +210,14 @@ void Controller::command_commands() {
 		getch();
 	}
 	else if (model_->cmd_ =="set num") {
-		switcher_->setLineNumOn(new PrintScreenLineNumbering(model_));
-		switcher_->lineNumOn();
+		PrintScreenLineNumbering* tmp = new PrintScreenLineNumbering(model_);
+		tmp->execute();
+		delete tmp;
 	}
 	else if (model_->cmd_ == "set nonum") {
-		switcher_->setLineNumOff(new PrintScreenNoLineNumbering(model_));
-		switcher_->lineNumOff();
+		PrintScreenNoLineNumbering* tmp = new PrintScreenNoLineNumbering(model_);
+		tmp->execute();
+		delete tmp;
 	}
 }
 
