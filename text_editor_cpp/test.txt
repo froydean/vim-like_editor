@@ -1,0 +1,162 @@
+Peter the Great St. Petersburg Polytechnic University
+Institute of cybersecurity and information securityInstitute of cybersecurity and information securityInstitute of cybersecurity and information securityInstitute of cybersecurity and information securityInstitute of cybersecurity a
+
+                    omg                         k
+
+k
+
+omg
+
+k
+ 
+
+
+
+
+
+
+GUIDELINES FOR LABORATORY WORK # 3
+ "Text editor"
+
+course "Object-Oriented Programming"
+
+
+
+
+
+
+
+
+
+
+
+Saint-Petersburg
+2020
+
+Content
+1. Task 3
+2. Theory 4
+3. Basic task 5
+3.1. Technical specification 5
+4. Additional tasks 8
+4.1. Tier 1 8
+4.2. Tier 2 8
+4.3. Tier 3 8
+4.4. Tier 4 8
+4.5. Tier 5 9
+4.6. Tier 6 9
+5. Report's content 10
+6. Hints 11
+
+
+1. Task
+Develop a text editor in C++. Basic requirement:
+- the Program must be written in C++ using STL and / or BOOST for any OS chosen by the student;
+- the program should be developed using MVC design pattern;
+- the program must have a UML class diagram;
+- the program must have a TUI --- Text User Interface. For TUI development, you can use any open-source libraries (for example, ncurses). If the libraries are written in C, the student must develop a wrapper class to use the functionality of this C library using the Adapter pattern;
+- the program should work with 1-byte text encoding;
+- to work with text, the student must use their own string class in the form of a static or dynamic library. It is forbidden to modify the source code of this class. If any functionality does not meet the needs of the student, the student must implement a new class with the necessary functionality based on the existing one using the Decorator pattern;
+- the application should not "hang" when working with large files (for example, reading/saving a file of 500K characters takes no longer than a second).
+   
+2. Theory
+For the successful execution of the laboratory work it is necessary to study the following topics:
+- what is a pattern;
+- what they are for;
+- learn the necessary patterns: MVC, adapter, decorator and etc.;
+- static or dynamic library.
+   
+3. Basic task
+3.1. Technical specification
+TUI must support the cursor and status bar. The status bar should display: current operating mode, file name, line number / lines total.
+The app supports 4 modes of operation:
+- navigation and editing     move the cursor over the text, scroll through the pages, go to the desired line, edit the text: copy, paste, cut a line/word. When you enter command buttons, they are NOT displayed on the screen;
+- text input     regular text input. Backspace, delete, insert, and all navigation actions should work;
+- command input     the command input is displayed on the command line. Backspace should work on the command line
+- search     as command mode, but for search.
+Navigation mode     the main mode of operation, from this mode you can switch to "input Mode", "command Mode" and "search Mode". When you start the program, it starts working in this mode (see Picture 1).
+
+[Refrain]
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+
+[Verse 1]
+Randorii kyou wa garaaki de lucky day
+Kattarii abura yogore mo kore de bye bye
+Dare da, dare da, atama no naka yobikakeru koe wa
+Are ga hoshii, kore ga hoshii to utatteiru
+[Pre-Chorus]
+Shiawase ni naritai
+Rakushite ikite itai
+Kono te ni tsukamitai
+Anata no sono mune no naka
+
+[Chorus]
+Happy day ume tsukushite
+Rest in peace made ikou ze
+Itsuka mita jigoku mo ii tokoro
+Ai wo baramaite
+I love you kenashite kure
+Zenbu ubatte waratte kure my honey
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Nanka wasur  chatten da
+
+[Refrain]
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a b  autiful star
+Doryoku, mirai, a beautiful star
+
+[Verse 2]
+Yon, yon, yon, san de hazureru tansansui
+Hangurii kojirasete hakisou na jinsei
+Yamanai ame wa nai you ni saki ni sono kasa wo kure yo
+Are ga hoshii, kore ga hoshii
+Subete hoshii, tada munashii
+You might also like
+KICK BACK
+             (Kenshi Yonezu)
+          (Fujii Kaze) -                       (Shinunoga E-Wa) (Romanized)
+Genius Romanizations
+Nobody Gets Me
+SZA
+[Bridge]
+Shiawase ni naritai
+Rakushite ikite itai
+Zenbu mechakucha ni shitai
+Nanimo kamo keshisaritai
+Anata no sono mune no naka
+
+[Chorus]
+Lucky de ume tsukushite
+Rest in peace made ikou ze
+Yoi ko dake mukaeru tengoku ja
+Doumo ikirannai
+I love you kenashite, unatte
+Waratte kure my honey
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Nanka wasurechatten da
+
+[Post-Chorus]
+Happy, lucky
+Konnichiwa, baby
+Yoi ko de itai
+Sorya tsumaranai
+Happy, lucky
+Konnichiwa, baby, so sweet
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Nanka sugoi yoi kanji
+[Refrain]
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+Doryoku, mirai, a beautiful star
+(Ha, ha, ha, ha)

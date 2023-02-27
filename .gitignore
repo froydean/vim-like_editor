@@ -1,0 +1,10 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/text_editor_cpp
+/Release
+/text_editor_cpp/Release
+/pdcurses
+/Visual\ Studio\ 2022
+/text_editor_cpp/over500k.txt
